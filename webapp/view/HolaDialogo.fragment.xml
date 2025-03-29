@@ -1,13 +1,23 @@
 <core:FragmentDefinition
-   xmlns="sap.m"
-   xmlns:core="sap.ui.core">
-   <Dialog
-      id="holaDialogo"
-      title="No molestes {/recipient/name}">
-      <beginButton>
-         <Button
-            text="{i18n>dialogCloseButtonText}"
-            press=".onCloseDialog"/>
-      </beginButton>
-   </Dialog>
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="holaDialogo"
+        title="No molestes {/recipient/name}"
+    >
+        <content>
+            <core:Icon
+                src="sap-icon://accessibility"
+                size="8rem"
+                class="sapUiMediumMargin"
+            />
+        </content>
+        <beginButton>
+            <Button
+                text="{i18n>dialogCloseButtonText}"
+                press=".onCloseDialog"
+            />
+        </beginButton>
+    </Dialog>
 </core:FragmentDefinition>

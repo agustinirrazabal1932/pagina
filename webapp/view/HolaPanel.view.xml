@@ -11,11 +11,13 @@
             id="botonDialogo"
             text="{i18n>textoDelBotonDialogo}"
             press=".onAccionDialogo"
-            class="sapUiSmallMarginEnd"/>
+            class="sapUiSmallMarginEnd"
+            icon="sap-icon://cart"/>
          <Button
             text="{i18n>showHelloButtonText}"
             press=".onShowHello"
             class="miBotonPersonalizado"
+            icon="sap-icon://cloud"
          />
          <Input
             value="{/recipient/name}"
@@ -27,8 +29,6 @@
             htmlText="hola {/recipient/name}"
             class="sapUiSmallMargin sapThemeHighlight-asColor miTextoPersonalizado"
          />
-         
-
       </content>
    </Panel>
 </mvc:View>
