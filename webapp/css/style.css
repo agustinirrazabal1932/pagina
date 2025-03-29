@@ -1,0 +1,12 @@
+html[dir="ltr"].miAppDemo .miBotonPersonalizado.sapMBtn{
+    margin-right: 0.125rem
+}
+
+html[dir="rtl"].miAppDemo .miBotonPersonalizado.sapMBtn {
+   margin-left: 0.125rem
+}
+
+.miAppDemo .miTextoPersonalizado{
+    display: inline-block;
+    font-weight: bold;
+}

@@ -1,0 +1,34 @@
+<mvc:View
+   controllerName="ui5.walkthrough.controller.HolaPanel"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Panel
+      headerText="{i18n>encabezadoPanelTitulo}"
+      class="sapUiResponsiveMargin"
+      width="auto">  
+      <content>
+         <Button
+            id="botonDialogo"
+            text="{i18n>textoDelBotonDialogo}"
+            press=".onAccionDialogo"
+            class="sapUiSmallMarginEnd"/>
+         <Button
+            text="{i18n>showHelloButtonText}"
+            press=".onShowHello"
+            class="miBotonPersonalizado"
+         />
+         <Input
+            value="{/recipient/name}"
+            valueLiveUpdate="true"
+            description="hola {/recipient/name}"
+            width="60%"
+         />
+         <FormattedText
+            htmlText="hola {/recipient/name}"
+            class="sapUiSmallMargin sapThemeHighlight-asColor miTextoPersonalizado"
+         />
+         
+
+      </content>
+   </Panel>
+</mvc:View>
