@@ -20,7 +20,8 @@ sap.ui.define([
                 //cargar el fragmento de xml
                 Fragment.load({
                     id: oView.getId(),
-                    name:"ui5.walkthrough.view.HolaDialogo"
+                    name:"ui5.walkthrough.view.HolaDialogo",
+                    controller: this
 
                 }).then(function(oDialogo){
                     //conectar la vista con los modelos
@@ -30,6 +31,11 @@ sap.ui.define([
             }else{
                 this.byId("holaDialogo").open();
             }                
-        }
+        },
+		onCloseDialog() {
+			// note: We don't need to chain to the pDialog promise, since this event handler
+			// is only called from within the loaded dialog itself.
+			this.byId("holaDialogo").close();
+		}
     });
 });
